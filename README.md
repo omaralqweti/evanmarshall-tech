@@ -1,7 +1,7 @@
 # evanmarshall.tech
 
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
-![Next.js](https://img.shields.io/badge/Next.js-14-black)
+![Next.js](https://img.shields.io/badge/Next.js-16-black)
 ![Deployment](https://img.shields.io/badge/Deployment-Automated-green)
 
 ## Tech Stack
