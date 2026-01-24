@@ -8,13 +8,13 @@
 
 **Frontend:**
 
-- Next.js 14 (React 18)
+- Next.js 16 (React 19)
 - Tailwind CSS
 - TypeScript (optional for Phase 1)
 
 **Backend:**
 
-- AWS Lambda (Node.js 20.x)
+- AWS Lambda (Node.js 24.x)
 - AWS API Gateway (REST API)
 - AWS SES (Email Service)
 
