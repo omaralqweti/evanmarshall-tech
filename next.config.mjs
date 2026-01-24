@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  output: 'export', // This tells Next.js to create static HTML files
+  images: {
+    unoptimized: true, // S3 can't do dynamic image optimization
+  },
+  trailingSlash: true, // Better for S3 hosting (creates index.html in folders)
 };
 
 export default nextConfig;

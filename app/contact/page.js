@@ -21,12 +21,39 @@ export default function Contact() {
   });
   const [status, setStatus] = useState(''); // 'sending', 'success', 'error'
 
+  //   const handleSubmit = async (e) => {
+  //     e.preventDefault();
+  //     setStatus('sending');
+
+  //     try {
+  //       const response = await fetch('/api/contact', {
+  //         method: 'POST',
+  //         headers: { 'Content-Type': 'application/json' },
+  //         body: JSON.stringify(formData),
+  //       });
+
+  //       if (response.ok) {
+  //         setStatus('success');
+  //         setFormData({ name: '', email: '', service: '', message: '' });
+  //       } else {
+  //         setStatus('error');
+  //       }
+  //     } catch (error) {
+  //       setStatus('error');
+  //     }
+  //   };
+
+  //   Since we're going static, the API route needs to become a separate Lambda. Update your contact page to call the Lambda directly
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
 
     try {
-      const response = await fetch('/api/contact', {
+      // TODO: replace this URL with your actual API Gateway URL later
+      const apiUrl =
+        process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000/api/contact';
+
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

@@ -55,6 +55,7 @@ export default function Home() {
               homeowners in Kentville and the Annapolis Valley solve tech
               problems.
             </p>
+            {/*
             <a
               href='/contact'
               className='inline-block bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-orange-100 hover:text-orange-600 transition shadow-lg'
@@ -62,6 +63,46 @@ export default function Home() {
             >
               Get Started
             </a>
+            */}
+            <div
+              className='mt-8 mx-auto max-w-md p-6 rounded-xl shadow-md border'
+              style={{
+                background: brandColors.card,
+                color: brandColors.accent,
+              }}
+            >
+              <h3
+                className='text-xl font-semibold mb-2'
+                style={{ color: brandColors.highlight }}
+              >
+                Contact Information
+              </h3>
+              <div className='mb-1'>Evan Marshall</div>
+              <div className='mb-1'>
+                Phone:{' '}
+                <a
+                  href='tel:+19025551234'
+                  style={{
+                    color: brandColors.highlight,
+                    textDecoration: 'underline',
+                  }}
+                >
+                  (902) 555-1234
+                </a>
+              </div>
+              <div>
+                Email:{' '}
+                <a
+                  href='mailto:me@evanmarshall.dev'
+                  style={{
+                    color: brandColors.highlight,
+                    textDecoration: 'underline',
+                  }}
+                >
+                  me@evanmarshall.dev
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 
