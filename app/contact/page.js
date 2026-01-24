@@ -1,6 +1,16 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
+
+const brandColors = {
+  primary: '#1a2238', // deep blue
+  accent: '#9daaf2', // soft blue
+  highlight: '#ff6a3d', // orange
+  background: '#f4f6fb', // light background
+  card: '#232946', // card bg
+  text: '#121629', // dark text
+};
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -34,8 +44,60 @@ export default function Contact() {
   };
 
   return (
-    <div className='container mx-auto px-4 py-16 max-w-2xl'>
-      <h1 className='text-4xl font-bold mb-8'>Get in Touch</h1>
+    <div
+      className='container mx-auto px-4 py-16 max-w-2xl'
+      style={{ background: brandColors.background, borderRadius: 16 }}
+    >
+      <Link
+        href='/'
+        className='inline-block mb-6 font-semibold'
+        style={{ color: brandColors.primary }}
+      >
+        ← Back to Home
+      </Link>
+      <h1
+        className='text-4xl font-bold mb-8'
+        style={{ color: brandColors.highlight }}
+      >
+        Get in Touch
+      </h1>
+
+      <div
+        className='mb-8 p-4 border border-gray-200 rounded-lg'
+        style={{ background: brandColors.card }}
+      >
+        <div
+          className='mb-2 font-semibold'
+          style={{ color: brandColors.accent }}
+        >
+          Contact Information
+        </div>
+        <div style={{ color: brandColors.accent }}>Evan Marshall</div>
+        <div style={{ color: brandColors.accent }}>
+          Phone:{' '}
+          <a
+            href='tel:+19025551234'
+            style={{
+              color: brandColors.highlight,
+              textDecoration: 'underline',
+            }}
+          >
+            (902) 555-1234
+          </a>
+        </div>
+        <div style={{ color: brandColors.accent }}>
+          Email:{' '}
+          <a
+            href='mailto:me@evanmarshall.dev'
+            style={{
+              color: brandColors.highlight,
+              textDecoration: 'underline',
+            }}
+          >
+            me@evanmarshall.dev
+          </a>
+        </div>
+      </div>
 
       {status === 'success' && (
         <div className='bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4'>
@@ -45,24 +107,42 @@ export default function Contact() {
 
       {status === 'error' && (
         <div className='bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4'>
-          Something went wrong. Please email me directly at your@email.com
+          Something went wrong. Please email me directly at{' '}
+          <a href='mailto:me@evanmarshall.dev' className='underline'>
+            me@evanmarshall.dev
+          </a>
         </div>
       )}
 
       <form onSubmit={handleSubmit} className='space-y-6'>
         <div>
-          <label className='block text-sm font-medium mb-2'>Name</label>
+          <label
+            className='block text-sm font-medium mb-2'
+            style={{ color: brandColors.primary }}
+          >
+            Name
+          </label>
           <input
             type='text'
             required
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            className='w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500'
+            className='w-full px-4 py-2 border rounded-lg focus:ring-2'
+            style={{
+              borderColor: brandColors.accent,
+              color: brandColors.text,
+              background: 'white',
+            }}
           />
         </div>
 
         <div>
-          <label className='block text-sm font-medium mb-2'>Email</label>
+          <label
+            className='block text-sm font-medium mb-2'
+            style={{ color: brandColors.primary }}
+          >
+            Email
+          </label>
           <input
             type='email'
             required
@@ -70,12 +150,20 @@ export default function Contact() {
             onChange={(e) =>
               setFormData({ ...formData, email: e.target.value })
             }
-            className='w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500'
+            className='w-full px-4 py-2 border rounded-lg focus:ring-2'
+            style={{
+              borderColor: brandColors.accent,
+              color: brandColors.text,
+              background: 'white',
+            }}
           />
         </div>
 
         <div>
-          <label className='block text-sm font-medium mb-2'>
+          <label
+            className='block text-sm font-medium mb-2'
+            style={{ color: brandColors.primary }}
+          >
             Service Interested In
           </label>
           <select
@@ -84,18 +172,28 @@ export default function Contact() {
             onChange={(e) =>
               setFormData({ ...formData, service: e.target.value })
             }
-            className='w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500'
+            className='w-full px-4 py-2 border rounded-lg focus:ring-2'
+            style={{
+              borderColor: brandColors.accent,
+              color: brandColors.text,
+              background: 'white',
+            }}
           >
             <option value=''>Select a service</option>
-            <option value='it-support'>General IT Support</option>
-            <option value='media-server'>Media Server Setup</option>
-            <option value='pc-building'>Custom PC Building</option>
-            <option value='gaming-setup'>Gaming Setup & Emulation</option>
+            <option value='tech-support'>General Tech Support</option>
+            <option value='media-centre'>Media Centre Setup</option>
+            {/* <option value='pc-building'>Custom PC Building</option> */}
+            <option value='gaming-setup'>Gaming System Setup</option>
           </select>
         </div>
 
         <div>
-          <label className='block text-sm font-medium mb-2'>Message</label>
+          <label
+            className='block text-sm font-medium mb-2'
+            style={{ color: brandColors.primary }}
+          >
+            Message
+          </label>
           <textarea
             required
             rows='5'
@@ -103,14 +201,20 @@ export default function Contact() {
             onChange={(e) =>
               setFormData({ ...formData, message: e.target.value })
             }
-            className='w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500'
+            className='w-full px-4 py-2 border rounded-lg focus:ring-2'
+            style={{
+              borderColor: brandColors.accent,
+              color: brandColors.text,
+              background: 'white',
+            }}
           />
         </div>
 
         <button
           type='submit'
           disabled={status === 'sending'}
-          className='w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 disabled:bg-gray-400 transition'
+          className='w-full py-3 rounded-lg font-semibold transition'
+          style={{ background: brandColors.primary, color: 'white' }}
         >
           {status === 'sending' ? 'Sending...' : 'Send Message'}
         </button>

@@ -1,122 +1,259 @@
+import Head from 'next/head';
+
+const brandColors = {
+  primary: '#1a2238', // deep blue
+  accent: '#9daaf2', // soft blue
+  highlight: '#ff6a3d', // orange
+  background: '#f4f6fb', // light background
+  card: '#232946', // card bg
+  text: '#121629', // dark text
+};
+
 export default function Home() {
   return (
-    <main>
-      {/* Hero Section */}
-      <section className='bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20'>
-        <div className='container mx-auto px-4 text-center'>
-          <h1 className='text-5xl font-bold mb-4'>
-            Professional IT Services & Custom PC Solutions
-          </h1>
-          <p className='text-xl mb-8'>
-            Expert setup for gaming rigs, media servers, and complete IT support
-          </p>
-          <a
-            href='/contact'
-            className='bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition'
-          >
-            Get Started
-          </a>
-        </div>
-      </section>
+    <>
+      <Head>
+        <title>
+          Evan Marshall Tech Services | Honest Tech Support & Custom Gaming PCs
+        </title>
+        <meta
+          name='description'
+          content='Honest tech support for homeowners in Kentville & Annapolis Valley. Custom PCs, home media centers, computer repair—no up sells, just solutions that work. 10+ years experience.'
+        />
+        <meta
+          name='keywords'
+          content='Evan Marshall Tech Services, tech support, Kentville, Annapolis Valley, custom PC, media centre, computer repair, gaming setup, emulation'
+        />
+      </Head>
+      <main style={{ background: brandColors.background, minHeight: '100vh' }}>
+        {/* Hero Section */}
+        <section
+          className='w-full py-20'
+          style={{
+            background: `linear-gradient(90deg, ${brandColors.primary} 60%, ${brandColors.accent} 100%)`,
+          }}
+        >
+          <div className='container mx-auto px-4 text-center'>
+            <h1
+              className='text-5xl font-extrabold mb-6'
+              style={{ color: brandColors.highlight }}
+            >
+              Evan Marshall Tech Services
+            </h1>
+            <h2
+              className='text-2xl font-semibold mb-6'
+              style={{ color: brandColors.accent }}
+            >
+              Honest Tech Support for Your Home
+            </h2>
+            <p className='text-xl mb-4 text-white'>
+              Need a custom gaming PC, a home media server, or just someone to
+              fix your slow laptop? I&apos;ve got you covered.
+            </p>
+            <p className='text-xl mb-8 text-white'>
+              No corporate up sells. No confusing jargon. 10+ years helping
+              homeowners in Kentville and the Annapolis Valley solve tech
+              problems.
+            </p>
+            <a
+              href='/contact'
+              className='inline-block bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-orange-100 hover:text-orange-600 transition shadow-lg'
+              style={{ border: `2px solid ${brandColors.highlight}` }}
+            >
+              Get Started
+            </a>
+          </div>
+        </section>
 
-      {/* Services Overview */}
-      <section className='py-16'>
-        <div className='container mx-auto px-4'>
-          <h2 className='text-3xl font-bold text-center mb-12'>My Services</h2>
-          <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
-            {/* Service Card 1 */}
-            <div className='border rounded-lg p-6 hover:shadow-lg transition'>
-              <h3 className='text-xl font-semibold mb-3'>General IT Support</h3>
-              <p className='text-gray-600 mb-4'>
-                Troubleshooting, network setup, software installation, and
-                ongoing maintenance.
-              </p>
-              <a
-                href='/services#it-support'
-                className='text-blue-600 hover:underline'
+        {/* Services Overview */}
+        <section className='py-20'>
+          <div className='container mx-auto px-4'>
+            <h2
+              className='text-3xl font-bold text-center mb-12'
+              style={{ color: brandColors.primary }}
+            >
+              My Services
+            </h2>
+            <div className='flex flex-wrap justify-center items-stretch gap-8'>
+              {/* Service Card 1 */}
+              <div
+                className='rounded-xl p-8 shadow-md transition-transform duration-200 hover:scale-105 hover:shadow-2xl cursor-pointer flex flex-col items-stretch'
+                style={{
+                  background: brandColors.card,
+                  color: brandColors.accent,
+                  minWidth: 260,
+                  maxWidth: 320,
+                  flex: '1 1 260px',
+                  minHeight: 260,
+                  height: '100%',
+                  display: 'flex',
+                }}
               >
-                Learn more →
-              </a>
-            </div>
+                <div>
+                  <h3
+                    className='text-xl font-semibold mb-3'
+                    style={{ color: brandColors.highlight }}
+                  >
+                    General Tech Support
+                  </h3>
+                  <p className='mb-4 text-white'>
+                    Troubleshooting computers and phones, internet setup,
+                    software installation, and ongoing maintenance.
+                  </p>
+                </div>
+                <div className='flex-1' />
+              </div>
 
-            {/* Service Card 2 */}
-            <div className='border rounded-lg p-6 hover:shadow-lg transition'>
-              <h3 className='text-xl font-semibold mb-3'>Media Server Setup</h3>
-              <p className='text-gray-600 mb-4'>
-                Plex, Jellyfin, or custom solutions for your home entertainment
-                system.
-              </p>
-              <a
-                href='/services#media-server'
-                className='text-blue-600 hover:underline'
+              {/* Service Card 2 */}
+              <div
+                className='rounded-xl p-8 shadow-md transition-transform duration-200 hover:scale-105 hover:shadow-2xl cursor-pointer flex flex-col items-stretch'
+                style={{
+                  background: brandColors.card,
+                  color: brandColors.accent,
+                  minWidth: 260,
+                  maxWidth: 320,
+                  flex: '1 1 260px',
+                  minHeight: 260,
+                  height: '100%',
+                  display: 'flex',
+                }}
               >
-                Learn more →
-              </a>
-            </div>
+                <div>
+                  <h3
+                    className='text-xl font-semibold mb-3'
+                    style={{ color: brandColors.highlight }}
+                  >
+                    Media Centre Setup
+                  </h3>
+                  <p className='mb-4 text-white'>
+                    TV, streaming devices, sound systems, and series, movie, and
+                    music content setup.
+                  </p>
+                </div>
+                <div className='flex-1' />
+              </div>
 
-            {/* Service Card 3 */}
-            <div className='border rounded-lg p-6 hover:shadow-lg transition'>
-              <h3 className='text-xl font-semibold mb-3'>Custom PC Building</h3>
-              <p className='text-gray-600 mb-4'>
-                High-performance builds tailored to your needs and budget.
-              </p>
-              <a
-                href='/services#pc-building'
-                className='text-blue-600 hover:underline'
+              {/* Service Card 3 (future) */}
+              {/* <div
+                className="rounded-xl p-8 shadow-md transition-transform duration-200 hover:scale-105 hover:shadow-2xl cursor-pointer flex flex-col justify-between"
+                style={{ background: brandColors.card, color: brandColors.accent, minWidth: 260, maxWidth: 320, flex: '1 1 260px', minHeight: 260, height: '100%', display: 'flex' }}
               >
-                Learn more →
-              </a>
-            </div>
+                <h3 className="text-xl font-semibold mb-3" style={{ color: brandColors.highlight }}>
+                  Custom PC Building
+                </h3>
+                <p className="mb-4 text-white">
+                  High-performance builds tailored to your needs and budget.
+                </p>
+              </div> */}
 
-            {/* Service Card 4 */}
-            <div className='border rounded-lg p-6 hover:shadow-lg transition'>
-              <h3 className='text-xl font-semibold mb-3'>
-                Gaming Setup & Emulation
-              </h3>
-              <p className='text-gray-600 mb-4'>
-                Retro gaming stations, emulation systems, and optimized gaming
-                configurations.
-              </p>
-              <a
-                href='/services#gaming-setup'
-                className='text-blue-600 hover:underline'
+              {/* Service Card 4 */}
+              <div
+                className='rounded-xl p-8 shadow-md transition-transform duration-200 hover:scale-105 hover:shadow-2xl cursor-pointer flex flex-col items-stretch'
+                style={{
+                  background: brandColors.card,
+                  color: brandColors.accent,
+                  minWidth: 260,
+                  maxWidth: 320,
+                  flex: '1 1 260px',
+                  minHeight: 260,
+                  height: '100%',
+                  display: 'flex',
+                }}
               >
-                Learn more →
-              </a>
+                <div>
+                  <h3
+                    className='text-xl font-semibold mb-3'
+                    style={{ color: brandColors.highlight }}
+                  >
+                    Gaming Emulation Setup
+                  </h3>
+                  <p className='mb-4 text-white'>
+                    Retro gaming stations, emulation systems, and optimized
+                    gaming configurations.
+                  </p>
+                </div>
+                <div className='flex-1' />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Social Proof / Why Choose Me */}
-      <section className='bg-gray-50 py-16'>
-        <div className='container mx-auto px-4 text-center'>
-          <h2 className='text-3xl font-bold mb-8'>Why Choose My Services?</h2>
-          <div className='grid md:grid-cols-3 gap-8 max-w-4xl mx-auto'>
-            <div>
-              <div className='text-4xl mb-4'>⚡</div>
-              <h3 className='font-semibold mb-2'>Fast Response</h3>
-              <p className='text-gray-600'>
-                Same-day service available for urgent issues
-              </p>
-            </div>
-            <div>
-              <div className='text-4xl mb-4'>💰</div>
-              <h3 className='font-semibold mb-2'>Transparent Pricing</h3>
-              <p className='text-gray-600'>
-                No hidden fees, clear quotes upfront
-              </p>
-            </div>
-            <div>
-              <div className='text-4xl mb-4'>🎯</div>
-              <h3 className='font-semibold mb-2'>Expert Knowledge</h3>
-              <p className='text-gray-600'>
-                Years of experience with latest technology
-              </p>
+        {/* Social Proof / Why Choose Me */}
+        <section className='py-20' style={{ background: brandColors.primary }}>
+          <div className='container mx-auto px-4 text-center'>
+            <h2
+              className='text-3xl font-bold mb-8'
+              style={{ color: brandColors.highlight }}
+            >
+              Why Choose Me Over The Big Guys?
+            </h2>
+            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto'>
+              <div className='bg-white/10 rounded-lg p-6 shadow-md'>
+                <div
+                  className='text-4xl mb-4'
+                  style={{ color: brandColors.accent }}
+                >
+                  🤝
+                </div>
+                <h3 className='font-semibold mb-2 text-white'>
+                  Relationship-Based
+                </h3>
+                <p className='text-gray-100'>
+                  I&apos;m not trying to close a sale and move on. I build
+                  long-term relationships with my clients—because your tech
+                  needs don&apos;t end after one visit.
+                </p>
+              </div>
+              <div className='bg-white/10 rounded-lg p-6 shadow-md'>
+                <div
+                  className='text-4xl mb-4'
+                  style={{ color: brandColors.accent }}
+                >
+                  💰
+                </div>
+                <h3 className='font-semibold mb-2 text-white'>
+                  Actually Save You Money
+                </h3>
+                <p className='text-gray-100'>
+                  I recommend cost-effective solutions and teach you how to
+                  avoid future problems. Your success is my success.
+                </p>
+              </div>
+              <div className='bg-white/10 rounded-lg p-6 shadow-md'>
+                <div
+                  className='text-4xl mb-4'
+                  style={{ color: brandColors.accent }}
+                >
+                  📞
+                </div>
+                <h3 className='font-semibold mb-2 text-white'>
+                  Real Person, Real Support
+                </h3>
+                <p className='text-gray-100'>
+                  No phone trees. No offshore call centers. Just direct contact
+                  with someone who actually cares about solving your problem.
+                </p>
+              </div>
+              <div className='bg-white/10 rounded-lg p-6 shadow-md'>
+                <div
+                  className='text-4xl mb-4'
+                  style={{ color: brandColors.accent }}
+                >
+                  🎓
+                </div>
+                <h3 className='font-semibold mb-2 text-white'>
+                  10+ Years Experience
+                </h3>
+                <p className='text-gray-100'>
+                  I&apos;ve been in customer service for over a decade, and I
+                  love the challenge of solving complex tech problems—then
+                  explaining them in a way that makes sense.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </>
   );
 }

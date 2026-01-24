@@ -13,11 +13,11 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title:
-    'Professional IT Services | PC Building | Media Servers | Kentville | Nova Scotia',
+    'General Tech Services | Computer Help | Phone Help | Kentville | Nova Scotia',
   description:
-    'Expert IT support, custom PC builds, media server setup, and gaming configurations. Fast, reliable service in Kentville, Nova Scotia.',
+    'Honest tech support for homeowners in Kentville & Annapolis Valley. Custom PCs, home media centers, computer repair—no up sells, just solutions that work. 10+ years experience.',
   keywords:
-    'IT support, PC building, media server, gaming setup, emulation, Kentville',
+    'computer repair Kentville, PC builder Annapolis Valley, home media centre setup Nova Scotia, custom PC Kentville, laptop repair Kentville, tech support Annapolis Valley, retro gaming emulation, home theater setup, computer troubleshooting, iPhone setup help, Android setup help',
 };
 
 export default function RootLayout({ children }) {
