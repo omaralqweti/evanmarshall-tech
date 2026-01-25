@@ -49,7 +49,6 @@ export default function Contact() {
     setStatus('sending');
 
     try {
-      // TODO: replace this URL with your actual API Gateway URL later
       const apiUrl =
         process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000/api/contact';
 

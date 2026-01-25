@@ -45,6 +45,10 @@
 
 ## Deployment
 
+**S3 Static Website URL:**
+
+https://evanmarshall-tech-services-2026.s3-website-us-east-1.amazonaws.com
+
 Automated deployment via GitHub Actions:
 
 1. Push to `main` branch
@@ -54,11 +58,12 @@ Automated deployment via GitHub Actions:
 5. Site live in ~2 minutes
 
 **Manual deployment:**
-\`\`\`bash
+
+```bash
 npm run build
 aws s3 sync out/ s3://your-bucket-name/ --delete
-aws cloudfront create-invalidation --distribution-id YOUR_ID --paths "/\*"
-\`\`\`
+aws cloudfront create-invalidation --distribution-id YOUR_ID --paths "/*"
+```
 
 ## What I Learned
 

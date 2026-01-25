@@ -1,0 +1,40 @@
+{
+  "CallerReference": "unique-string-123",
+  "Comment": "CDN for IT Services Website",
+  "Enabled": true,
+  "Origins": {
+    "Quantity": 1,
+    "Items": [
+      {
+        "Id": "S3-Website",
+        "DomainName": "evanmarshall-tech-services-2026.s3-website-us-east-1.amazonaws.com",
+        "CustomOriginConfig": {
+          "HTTPPort": 80,
+          "HTTPSPort": 443,
+          "OriginProtocolPolicy": "http-only"
+        }
+      }
+    ]
+  },
+  "DefaultRootObject": "index.html",
+  "DefaultCacheBehavior": {
+    "TargetOriginId": "S3-Website",
+    "ViewerProtocolPolicy": "redirect-to-https",
+    "AllowedMethods": {
+      "Quantity": 2,
+      "Items": ["GET", "HEAD"]
+    },
+    "ForwardedValues": {
+      "QueryString": false,
+      "Cookies": {
+        "Forward": "none"
+      }
+    },
+    "MinTTL": 0,
+    "TrustedSigners": {
+      "Enabled": false,
+      "Quantity": 0
+    }
+  },
+  "PriceClass": "PriceClass_100"
+}

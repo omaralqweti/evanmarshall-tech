@@ -55,7 +55,7 @@ export default function Home() {
               homeowners in Kentville and the Annapolis Valley solve tech
               problems.
             </p>
-            {/*
+
             <a
               href='/contact'
               className='inline-block bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-orange-100 hover:text-orange-600 transition shadow-lg'
@@ -63,8 +63,8 @@ export default function Home() {
             >
               Get Started
             </a>
-            */}
-            <div
+
+            {/* <div
               className='mt-8 mx-auto max-w-md p-6 rounded-xl shadow-md border'
               style={{
                 background: brandColors.card,
@@ -102,7 +102,7 @@ export default function Home() {
                   me@evanmarshall.dev
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
