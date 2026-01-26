@@ -16,7 +16,7 @@ export const metadata = {
   title:
     'General Tech Services | Computer Help | Phone Help | Kentville | Nova Scotia',
   description:
-    'Honest tech support for homeowners in Kentville & Annapolis Valley. Custom PCs, home media centers, computer repair—no up sells, just solutions that work. 10+ years experience.',
+    'Honest tech support for homeowners in Kentville & Annapolis Valley. Custom PCs, home media centers, computer repair—no up sells, just solutions that work. 15+ years experience.',
   keywords:
     'computer repair Kentville, PC builder Annapolis Valley, home media centre setup Nova Scotia, custom PC Kentville, laptop repair Kentville, tech support Annapolis Valley, retro gaming emulation, home theater setup, computer troubleshooting, iPhone setup help, Android setup help',
 };

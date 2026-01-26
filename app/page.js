@@ -18,7 +18,7 @@ export default function Home() {
         </title>
         <meta
           name='description'
-          content='Honest tech support for homeowners in Kentville & Annapolis Valley. Custom PCs, home media centers, computer repair—no up sells, just solutions that work. 10+ years experience.'
+          content='Honest tech support for homeowners in Kentville & Annapolis Valley. Custom PCs, home media centers, computer repair—no up sells, just solutions that work. 15+ years experience.'
         />
         <meta
           name='keywords'
@@ -51,7 +51,7 @@ export default function Home() {
               fix your slow laptop? I&apos;ve got you covered.
             </p>
             <p className='text-xl mb-8 text-white'>
-              No corporate up sells. No confusing jargon. 10+ years helping
+              No corporate up sells. No confusing jargon. 15+ years helping
               homeowners in Kentville and the Annapolis Valley solve tech
               problems.
             </p>
@@ -283,7 +283,7 @@ export default function Home() {
                   🎓
                 </div>
                 <h3 className='font-semibold mb-2 text-white'>
-                  10+ Years Experience
+                  15+ Years Experience
                 </h3>
                 <p className='text-gray-100'>
                   I&apos;ve been in customer service for over a decade, and I
